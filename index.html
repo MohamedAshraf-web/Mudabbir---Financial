@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مدبّر - لوحة التحكم المالية</title>
+
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- القائمة الجانبية Navigation Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-logo">
+        <img src="image/icons/coins-solid-full.png" alt="شعار مدبّر">
+      </div>
+      <div class="brand-text">
+        <h2>مدبّر</h2>
+        <p>إدارة أموالك بذكاء</p>
+      </div>
+    </div>
+
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li class="nav-item active">
+          <a href="#"><i class="fa-solid fa-house"></i><span>الصفحة الرئيسية</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><i class="fa-solid fa-arrow-right-arrow-left"></i><span>المعاملات</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><i class="fa-solid fa-chart-pie"></i><span>الميزانيات</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><i class="fa-solid fa-piggy-bank"></i><span>المدخرات</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><i class="fa-solid fa-file-invoice-dollar"></i><span>الفواتير الشهرية</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#"><i class="fa-solid fa-gear"></i><span>الإعدادات</span></a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- المحتوى الرئيسي Dashboard Main Content -->
+  <main class="dashboard-container">
+    
+    <!-- الشريط العلوي Top Header -->
+    <header class="top-bar">
+      <div class="header-user">
+        <img src="image/profile2.jpg" alt="صورة المستخدم الشخصية" class="user-avatar">
+        <div class="user-info">
+          <h1> محمد أشرف </h1>
+          <p class="subtitle">حساب مميز✨</p>
+        </div>
+      </div>
+
+      <div class="header-controls">
+        <button class="icon-btn" aria-label="البحث"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn badge-btn" aria-label="الإشعارات"><i class="fa-regular fa-bell"></i></button>
+        <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> إضافة معاملة</button>
+      </div>
+    </header>
+
+    <!-- ملخص الحسابات Stat Cards -->
+    <section class="summary-grid">
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">الرصيد الحالي</span>
+          <i class="fa-solid fa-vault stat-icon"></i>
+        </div>
+        <div class="stat-value">8,450 جنيه</div>
+        <div class="stat-change up"><i class="fa-solid fa-arrow-up"></i> +2.5% هذا الشهر</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">الدخل</span>
+          <i class="fa-solid fa-money-bill-trend-up stat-icon"></i>
+        </div>
+        <div class="stat-value">15,000 جنيه</div>
+        <div class="stat-change up"><i class="fa-solid fa-arrow-up"></i> +8.2% عن الشهر الماضي</div>
+      </div>
+
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-title">المصروفات</span>
+          <i class="fa-solid fa-receipt stat-icon"></i>
+        </div>
+        <div class="stat-value">10,000 جنيه</div>
+        <div class="stat-change down"><i class="fa-solid fa-arrow-down"></i> -1.2% وفر مقارنة بالمتوقع</div>
+      </div>
+    </section>
+
+    <!-- البطاقات والرسم البياني Middle Grid -->
+    <section class="middle-grid">
+      
+      <!-- بطاقات الحسابات (مع تأثير الـ 3D Flip) -->
+      <div class="section-card cards-section">
+        <div class="section-header">
+          <h3>بطاقاتي وحساباتي</h3>
+          <a href="#" class="link-btn">إدارة البطاقات</a>
+        </div>
+        
+        <div class="cards-wrapper">
+          
+          <!-- بطاقة 1 -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card-front card-blue">
+                <div class="card-top">
+                  <span class="card-type">البنك الأهلي المصري</span>
+                  <i class="fa-brands fa-cc-visa card-logo"></i>
+                </div>
+                <div class="card-number">**** **** **** 4829</div>
+                <div class="card-bottom">
+                  <div>
+                    <span class="label">صاحب البطاقة</span>
+                    <p class="val">محمد أشرف</p>
+                  </div>
+                  <div>
+                    <span class="label">الرصيد</span>
+                    <p class="val">85,000 ج.م</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-back card-blue">
+                <div class="magnetic-strip"></div>
+                <div class="cvv-box">
+                  <span>CVV: 893</span>
+                </div>
+                <p class="card-back-text">بطاقة ائتمانية رئيسية للحساب الجاري</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- بطاقة 2 -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="card-front card-gold">
+                <div class="card-top">
+                  <span class="card-type">CIB Bank</span>
+                  <i class="fa-brands fa-cc-mastercard card-logo"></i>
+                </div>
+                <div class="card-number">**** **** **** 9102</div>
+                <div class="card-bottom">
+                  <div>
+                    <span class="label">صاحب البطاقة</span>
+                    <p class="val">محمد أشرف</p>
+                  </div>
+                  <div>
+                    <span class="label">الرصيد</span>
+                    <p class="val">57,500 ج.م</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-back card-gold">
+                <div class="magnetic-strip"></div>
+                <div class="cvv-box">
+                  <span>CVV: 142</span>
+                </div>
+                <p class="card-back-text">حساب ادخار وتحويلات شخصية</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- الرسم البياني للدخل والمصروفات -->
+      <div class="section-card chart-section">
+        <div class="section-header">
+          <h3>تحليل الدخل والمصروفات</h3>
+          <select class="dropdown-select">
+            <option>آخر 6 أشهر</option>
+            <option>السنة الحالية</option>
+          </select>
+        </div>
+
+        <div class="chart-container">
+          <div class="chart-bar-group">
+            <div class="bars">
+              <div class="bar bar-income" style="height: 60%;" title="دخل: 30,000"></div>
+              <div class="bar bar-expense" style="height: 40%;" title="مصروف: 15,000"></div>
+            </div>
+            <span class="month-label">أبريل</span>
+          </div>
+
+          <div class="chart-bar-group">
+            <div class="bars">
+              <div class="bar bar-income" style="height: 75%;" title="دخل: 32,000"></div>
+              <div class="bar bar-expense" style="height: 50%;" title="مصروف: 18,000"></div>
+            </div>
+            <span class="month-label">مايو</span>
+          </div>
+
+          <div class="chart-bar-group">
+            <div class="bars">
+              <div class="bar bar-income" style="height: 70%;" title="دخل: 31,000"></div>
+              <div class="bar bar-expense" style="height: 45%;" title="مصروف: 16,500"></div>
+            </div>
+            <span class="month-label">يونيو</span>
+          </div>
+
+          <div class="chart-bar-group">
+            <div class="bars">
+              <div class="bar bar-income" style="height: 85%;" title="دخل: 35,000"></div>
+              <div class="bar bar-expense" style="height: 55%;" title="مصروف: 19,000"></div>
+            </div>
+            <span class="month-label">يوليو</span>
+          </div>
+
+          <div class="chart-bar-group">
+            <div class="bars">
+              <div class="bar bar-income" style="height: 80%;" title="دخل: 33,000"></div>
+              <div class="bar bar-expense" style="height: 48%;" title="مصروف: 17,000"></div>
+            </div>
+            <span class="month-label">أغسطس</span>
+          </div>
+
+          <div class="chart-bar-group">
+            <div class="bars">
+              <div class="bar bar-income" style="height: 90%;" title="دخل: 35,000"></div>
+              <div class="bar bar-expense" style="height: 52%;" title="مصروف: 18,200"></div>
+            </div>
+            <span class="month-label">سبتمبر</span>
+          </div>
+        </div>
+
+        <div class="chart-legend">
+          <div class="legend-item"><span class="color-dot income-dot"></span> الدخل</div>
+          <div class="legend-item"><span class="color-dot expense-dot"></span> المصروفات</div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- المعاملات الأخيرة الأنشطة Bottom Grid -->
+    <section class="bottom-grid">
+      
+      <!-- جدول المعاملات الأخيرة -->
+      <div class="section-card transactions-section">
+        <div class="section-header">
+          <h3>المعاملات الأخيرة</h3>
+          <a href="#" class="link-btn">عرض الكل</a>
+        </div>
+
+        <div class="table-responsive">
+          <table class="transactions-table">
+            <thead>
+              <tr>
+                <th>المعاملة</th>
+                <th>الفئة</th>
+                <th>التاريخ</th>
+                <th>الحالة</th>
+                <th>المبلغ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="transaction-info">
+                    <img src="image/avatar-2.jpg" alt="محمود النجار" class="tx-user-img">
+                    <div>
+                      <p class="tx-title">محمود النجار</p>
+                      <span class="tx-sub">تحويل أموال</span>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge category-badge income-bg">دخل</span></td>
+                <td>14 أكتوبر 2025</td>
+                <td><span class="status-badge success">مكتمل</span></td>
+                <td class="amount income">+350 جنيه</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="transaction-info">
+                    <div class="tx-icon">🍽️</div>
+                    <div>
+                      <p class="tx-title">Meat moot</p>
+                      <span class="tx-sub">دفع مطعم</span>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="badge category-badge expense-bg">طعام</span></td>
+                <td>14 أكتوبر 2025</td>
+                <td><span class="status-badge success">مكتمل</span></td>
+                <td class="amount expense">-2200 جنيه</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- الأنشطة الحديثة -->
+      <div class="section-card activity-section">
+        <div class="section-header">
+          <h3>الأنشطة الحديثة</h3>
+        </div>
+
+        <div class="activities-list">
+          <div class="activity-card blue-border">
+            <div class="activity-icon blue-bg">
+              <i class="fa-solid fa-user-plus"></i>
+            </div>
+            <div class="activity-details">
+              <h4>إنشاء حساب توفير جديد</h4>
+              <p>تم إنشاء حساب توفير بنك الأهلي بنجاح</p>
+              <span class="time-stamp">منذ ساعة واحدة</span>
+            </div>
+            <span class="activity-tag">حساب</span>
+          </div>
+
+          <div class="activity-card green-border">
+            <div class="activity-icon green-bg">
+              <i class="fa-solid fa-credit-card"></i>
+            </div>
+            <div class="activity-details">
+              <h4>إضافة بطاقة جديدة</h4>
+              <p>تمت إضافة بطاقة Visa الجديدة 2847****</p>
+              <span class="time-stamp">منذ 3 ساعات</span>
+            </div>
+            <span class="activity-tag green-tag">بطاقة</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
